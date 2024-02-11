@@ -72,7 +72,7 @@ function start(loc, city, icon_, temp_){
     if(!temp_ || !icon_){
         $.ajax({
             type: "GET",
-            url: "http://api.openweathermap.org/data/2.5/weather?q="+loc+"&APPID="+apiKEY+"&mode=xml&units=metric",
+            url: "https://api.openweathermap.org/data/2.5/weather?q="+loc+"&APPID="+apiKEY+"&mode=xml&units=metric",
             dataType: "xml",
             success: function(xml) {
                 xmlDATA = xml
