@@ -2,4 +2,4 @@ api.openweathermap.org/data/2.5/weather?q=Poznan,pl&APPID=35fddddbf51ee444f49097
 
 api.openweathermap.org/data/2.5/forecast?q=Poznan,pl&APPID=35fddddbf51ee444f49097dfc7d2af0b&mode=xml&units=metric
 
-http://openweathermap.org/weather-conditions
+https://openweathermap.org/weather-conditions
