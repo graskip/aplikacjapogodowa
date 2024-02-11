@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>POGODA</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+  
+  <div id="MAIN">
+      <video id="VIDEO" autoplay muted loop>
+          <source src="img/01d.mp4">
+      </video>
+      <img id="COND" src="img/01d.png">
+      <div id="CITY">Poznań</div>
+      <div id="TEMP">20&deg;</div>
+      
+      <div id="button"></div>
+      <div id="sidebar">
+          <ul>
+              <li data-loc="poznan,pl">Poznań</li>
+              <li data-loc="warsaw,pl">Warszawa</li>
+              <li data-loc="london,gb">Londyn</li>
+              <li data-loc="madrid,es">Madryt</li>
+              <li data-loc="new york,us">Nowy Jork</li>
+              <li data-loc="sydney,au">Sydney</li>
+          </ul>
+      </div>
+      
+      
+  </div>
+  <div id="info">
+     <h2>Kamil Karcz</h2>
+  </div>
+  <div id="rnd"></div>
+</body>
+</html>

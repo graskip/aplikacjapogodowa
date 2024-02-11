@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fcfcfc;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+#MAIN {
+    overflow: hidden;
+    width: 360px;
+    height: 780px;
+    border-radius: 20px;
+    border: 10px solid #000;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 5px 24px 0px rgba(0,0,0,0.4);
+}
+
+#info {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+#rnd {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background-image: url(rnd.svg);
+    background-size: 100% 100%;
+}
+
+#info h2 {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: inline-block;
+    font-size: 21px;
+    margin: 0;
+    margin-right: 0.2em;
+    color: #000;
+    font-weight: normal;
+}
+
+#VIDEO {
+    position: absolute;
+    width: 360px;
+    height: 780px;
+}
+
+#MAIN.day {
+    background-color: #fafafa
+}
+
+
+#CITY {
+    position: absolute;
+    width: 360px;
+    left: 0px;
+    top: 54px;
+    font-size: 24px;
+    color: #3e3c8a;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+#TEMP {
+    position: absolute;
+    font-size: 70px;
+    text-align: center;
+    left: 142px;
+    top: 90px;
+    font-weight: 300;
+    color: #3e3c8a;
+    width:;
+    font-family: 'Roboto', sans-serif;
+}
+#TEMP .deg {
+    position: absolute;
+    top: 3px;
+}
+#TEMP.minus {
+    margin-left: -0.15em;
+}
+
+#COND {
+    position: absolute;
+    width: 360;
+    height: 730;
+    left: -1000px;
+    top: 0px;
+}
+
+
+#sidebar {
+    position: absolute;
+    background-image: url(img/panelday.png);
+    width: 360px;
+    height: 410px;
+    bottom: -410px;
+    right: px;
+    transition: bottom 300ms ease-out;
+    display: flex;
+    align-items: center;
+ 
+}
+
+#sidebar.active {
+   bottom: 0px;
+    transition: bottom 300ms ease-out;
+}
+
+#sidebar ul {
+    height: auto;
+    display: block;
+    margin: 0;
+    padding:0 ;
+    list-style: none;
+    margin-left: 128px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar li {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#button {
+    position: absolute;
+    width: 54px;
+    height: 60px;
+    top: 726px;
+    right: 158px;
+    background-image: url(img/btn.png);
+    background-size: 100% 100%;
+}
+
+/*NOC*/
+#MAIN.night {
+    background-color: #0013a7;
+}
+
+#MAIN.night #button {
+    background-image: url(img/btnn.png);
+}
+
+#MAIN.night #TEMP, #MAIN.night #sidebar li, #MAIN.night #CITY {
+    color: #FFF;
+}
+
+#MAIN.night #sidebar {
+    background-image: url(img/panelnight.png)
+}
+
+
+#VIDEO {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 360px;
+    height: 780px;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
